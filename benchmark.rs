@@ -132,3 +132,25 @@ fn main() {
     sequential_vs_random_access();
     false_sharing_measurement();
 }
+
+/*
+sequential_read:
+Sum: 67108864 | elapsed: 0.342746838
+random read:
+Sum: 67108864 | elapsed: 1.852510619
+Percentage slower: 440.489%
+Times Longer: 5.405x
+Time per element(Sequential read) = 5.107ns
+Time per element(Random read) = 27.605ns
+False Sharing:
+Elapsed: 2.6984704
+Final A: 100000000 | Final B: 100000000
+Independent:
+Elapsed: 1.367
+Final C1: 100000000 | Final C2: 100000000
+
+Times longer: 1.9744816x
+Percentage slower: 97.44816%
+False sharing: 13.492ns
+Independent: 6.833ns
+*/
